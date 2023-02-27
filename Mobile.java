@@ -1,24 +1,41 @@
-package week1.day1;
+package week2.day1;
 
 public class Mobile {
-	String mobileBrandName = "Samsung";
-	char logo = 'S';
-	short noOfMobilePiece = 2563;
-	int modelNumber = 753685958;
-	long moblieLmeiNumber = 864527736336870l;
-	float mobilePrice = 2500.9724834f;
-	boolean isDamaged = false;
+	
+	public void openApplication() {
+		System.out.println("Open Chrome to browse internet");
+	}
+	public void useSearchBar() {
+		System.out.println("Search java programs");
+	}
+	public void onMobile() {
+		System.out.println("switch On the mobile");
+	}
+	public void useCamera() {
+		System.out.println("Open Camera to click photos");
+	}
+	public void sendMessage() {
+		System.out.println("Send Message to friends");
+	}
+	public void watchMovies() {
+		System.out.println("watch a tamil movie");
+	}
+	public void playGames() {
+		System.out.println("Play carrom game");
+	}
+	
+	
 	
 	public static void main(String[] args) {
-		
-		Mobile myNewMobile=new Mobile();
-		System.out.println(myNewMobile.mobileBrandName);
-		System.out.println("logo = "+myNewMobile.logo);
-		System.out.println("Mobile Piece Number = "+myNewMobile.noOfMobilePiece);
-		System.out.println("Model Number = "+myNewMobile.modelNumber);
-		System.out.println("Mobile LMEI Number = "+myNewMobile.moblieLmeiNumber);
-		System.out.println("Mobile Price = "+myNewMobile.mobilePrice);
-		System.out.println("Is the Mobile Damaged = "+myNewMobile.isDamaged);
-		
+	Mobile myMobile=new Mobile();
+	myMobile.onMobile();
+	myMobile.openApplication();
+	myMobile.sendMessage();
+	myMobile.useSearchBar();
+	myMobile.useCamera();
+	myMobile.watchMovies();
+	myMobile.playGames();
 	}
+	
+	
 }
